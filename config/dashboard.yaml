@@ -1,0 +1,34 @@
+dashboard:
+  title: "InsightLens - Feedback Analytics"
+  default_page: "Overview"
+
+  sections:
+    - id: "overview"
+      label: "Overview"
+      enabled: true
+    - id: "sentiment"
+      label: "Sentiment Analysis"
+      enabled: true
+    - id: "topics"
+      label: "Topics & Keywords"
+      enabled: true
+    - id: "timeline"
+      label: "Timeline"
+      enabled: true
+    - id: "insights"
+      label: "Insights"
+      enabled: true
+
+  charts:
+    sentiment_pie:
+      enabled: true
+    sentiment_over_time:
+      enabled: true
+    top_keywords_bar:
+      enabled: true
+    wordcloud:
+      enabled: true
+
+  export:
+    allow_download_filtered_csv: true
+    allow_download_summary_txt: true

@@ -1,0 +1,24 @@
+nlp:
+  language: "en"                    # modelo principal
+  spacy_model: "en_core_web_sm"     # carregado via spacy.load
+  use_lemmatization: true
+  remove_stopwords: true
+  lowercase: true
+  remove_punctuation: true
+
+sentiment:
+  # mais tarde podemos trocar por transformers, etc.
+  engine: "vader"                   # vader | sklearn | transformers
+  positive_threshold: 0.05
+  negative_threshold: -0.05
+
+keywords:
+  method: "tfidf"                   # tfidf | rake | yake (futuro)
+  max_keywords_global: 30
+  max_keywords_per_doc: 5
+
+topics:
+  enabled: true
+  method: "lsa"                     # lsa | nmf (para já)
+  n_topics: 5
+  max_features: 5000

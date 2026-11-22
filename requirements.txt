@@ -1,0 +1,17 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+streamlit
+
+spacy
+
+
+nltk
+wordcloud
+
+pyyaml
+python-dotenv
+
+tqdm
